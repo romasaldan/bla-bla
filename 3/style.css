@@ -1,0 +1,61 @@
+.wrapper {
+	background-color: #FE9906;
+	width: 150px;
+	height: 100px;
+	position: relative;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	
+}
+.first-disk, 
+.second-disk {
+	background-color: rgba(255, 255, 255, 0.5);
+	border-radius: 50%;
+	position: absolute;
+	
+}
+
+.first-disk {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-name: slidein;
+  animation-name: slidein;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+.second-disk {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-name: slideout;
+  animation-name: slideout;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+@-webkit-keyframes slidein {
+	from {
+		width: 0.3%;
+		height: 0.4%; 
+	}
+	to {    
+		width: 22%;
+		height: 33%;
+	}
+}
+@-webkit-keyframes slideout {
+	from {
+		width: 22%;
+		height: 33%;
+	}
+	to {    
+		width: 0.3%;
+		height: 0.4%;
+	}
+}
